@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+// task 38, task 45, task 64, task 101, task 162, task 253, task 100, task 269, task 206, task 197
+
 void task38(void) {
     int n, i;
     double sum = 0.0;
@@ -84,7 +86,10 @@ void task162(void) {
     int digit, sign;
 
     printf("Natural number: ");
-    scanf("%lld", &n);
+if (scanf("%lld", &n) != 1 || n < 1) {
+    printf("Incorrect number.\n");
+    return;
+}
 
     /* First sum: start with the rightmost digit and alternate signs. */
     t = n;
